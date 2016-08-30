@@ -18,3 +18,9 @@ dependencies {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.14.1'
 }
+
+// Pass system properties through to the test task so we can pass in system properties to Spock tests.
+// Adapted from http://mrhaki.blogspot.com/2015/09/grails-goodness-passing-system.html
+configure(test) {
+    systemProperties System.properties
+}
