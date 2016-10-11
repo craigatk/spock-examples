@@ -1,6 +1,6 @@
 package example.ignore
 
-import example.annotation.Slow
+import example.Slow
 import spock.lang.Specification
 
 class SpockConfigSpec extends Specification {
